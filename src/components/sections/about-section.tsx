@@ -52,8 +52,11 @@ export function AboutSection() {
             </CardContent>
           </Card>
 
-          <div className="mb-8">
-            <Badge variant="secondary" className="text-lg px-4 py-2">
+          <div className="mb-8 flex justify-center sm:justify-start">
+            <Badge
+              variant="secondary"
+              className="text-base sm:text-lg px-3 sm:px-4 py-2 text-center whitespace-normal break-words"
+            >
               Full Stack Web Developer, JavaScript Developer, TypeScript Developer
             </Badge>
           </div>
