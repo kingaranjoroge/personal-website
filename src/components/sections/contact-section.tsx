@@ -98,7 +98,7 @@ export function ContactSection() {
                     <Phone className="mt-1 size-5 text-accent" />
                     <div>
                       <p className="text-xs uppercase tracking-[0.24em] text-background/60">Phone</p>
-                      <p className="mt-1 text-sm font-medium text-background">0703371828</p>
+                      <p className="mt-1 text-sm font-medium text-background">+254703371828</p>
                     </div>
                   </div>
                 </div>
