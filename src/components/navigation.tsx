@@ -15,7 +15,7 @@ const navItems = [
 ]
 
 const socialLinks = [
-  { name: 'LinkedIn', icon: Linkedin, href: 'https://www.linkedin.com/in/brian-king-ara-3bb150277/' },
+  { name: 'LinkedIn', icon: Linkedin, href: 'https://www.linkedin.com/in/brian-kingara' },
   { name: 'GitHub', icon: Github, href: 'https://github.com/kingaranjoroge' },
 ]
 
