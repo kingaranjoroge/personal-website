@@ -8,12 +8,20 @@ import { ExternalLink } from 'lucide-react'
 
 const projects = [
   {
-    title: 'Buntu - Social Networking Platform',
-    description: 'A social networking platform built with the MERN stack, focused on clean interaction flows, realtime communication, and profile management.',
-    url: 'https://buntu-network.vercel.app/',
-    tags: ['React', 'Node.js', 'MongoDB', 'Express', 'Socket.io'],
+    title: 'YDT Community Platform',
+    description: 'A community-focused web platform designed to connect members through a clean, responsive interface and modern interaction patterns.',
+    url: 'https://ydt-community.vercel.app/',
+    tags: ['React', 'Next.js', 'Community', 'Responsive UI', 'Frontend'],
     label: 'Community platform',
     role: 'Frontend and backend implementation',
+  },
+  {
+    title: 'Events App',
+    description: 'An events experience built to streamline event discovery and engagement with a clear layout and intuitive user flow.',
+    url: 'https://events-app-ebon.vercel.app/',
+    tags: ['React', 'Events', 'UX', 'Web App', 'Frontend'],
+    label: 'Events platform',
+    role: 'Product build and deployment',
   },
   {
     title: 'FetchFast - Online Restaurant Ordering & Management System',
@@ -22,15 +30,7 @@ const projects = [
     tags: ['React', 'Node.js', 'MongoDB', 'Payments', 'Realtime'],
     label: 'Operations platform',
     role: 'Product interface and app architecture',
-  },
-  {
-    title: 'InternConnect - Internships Search Platform',
-    description: 'A platform connecting students with internships through search, application tracking, and profile management.',
-    url: 'https://internkonnekt.netlify.app/',
-    tags: ['React', 'Express.js', 'MongoDB', 'Authentication', 'REST API'],
-    label: 'Talent platform',
-    role: 'Product build and deployment',
-  },
+  }
 ]
 
 export function PortfolioSection() {

@@ -26,12 +26,11 @@ const capabilities = [
 
 const personalInfo = [
   { label: 'Name', value: 'Brian Njoroge' },
-  { label: 'Website', value: 'kingaranjoroge.netlify.app', link: 'https://kingaranjoroge.netlify.app/' },
-  { label: 'Phone', value: '0703371828' },
+  { label: 'Website', value: 'brian-njoroge.vercel.app', link: 'https://brian-njoroge.vercel.app/' },
+  { label: 'Phone', value: '+254703371828' },
   { label: 'Email', value: 'briankingara4@gmail.com' },
   { label: 'City', value: 'Nairobi, Kenya' },
   { label: 'Github', value: 'github.com/kingaranjoroge', link: 'https://github.com/kingaranjoroge' },
-  { label: 'Degree', value: 'Bsc. Applied Computer Science' },
   { label: 'Freelance', value: 'Available' },
 ]
 
