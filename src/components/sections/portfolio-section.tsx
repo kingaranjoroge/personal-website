@@ -35,7 +35,7 @@ const projects = [
 
 export function PortfolioSection() {
   return (
-    <section id="portfolio" className="w-full py-24 sm:py-28 px-4 sm:px-6 lg:px-8">
+    <section id="portfolio" className="w-full px-4 py-20 sm:px-6 sm:py-28 lg:px-8">
       <div className="mx-auto w-full max-w-7xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -51,8 +51,8 @@ export function PortfolioSection() {
           </div>
 
           <div className="mb-10 max-w-3xl">
-            <h2 className="text-4xl font-semibold text-foreground sm:text-5xl">Selected work that shows execution, not just ideas.</h2>
-            <p className="mt-4 text-lg leading-8 text-muted-foreground">
+            <h2 className="text-3xl font-semibold text-foreground sm:text-5xl">Selected work that shows execution, not just ideas.</h2>
+            <p className="mt-4 text-base leading-7 text-muted-foreground sm:text-lg sm:leading-8">
               These projects show product thinking, implementation discipline, and the ability to ship polished experiences across different use cases.
             </p>
           </div>
@@ -66,24 +66,24 @@ export function PortfolioSection() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
               >
-                <Card className="overflow-hidden rounded-[2rem] border-border/70 bg-background/85 shadow-xl shadow-black/5 backdrop-blur-xl transition-transform duration-300 hover:-translate-y-1">
+                <Card className="overflow-hidden rounded-3xl sm:rounded-[2rem] border-border/70 bg-background/85 shadow-xl shadow-black/5 backdrop-blur-xl transition-transform duration-300 hover:-translate-y-1">
                   <CardHeader className="border-b border-border/70 pb-6">
                     <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
                       <div className="max-w-3xl">
                         <div className="mb-3 flex flex-wrap gap-2">
-                          <Badge variant="secondary" className="rounded-full bg-primary/10 px-3 py-1 text-xs uppercase tracking-[0.22em] text-primary">
+                          <Badge variant="secondary" className="rounded-full bg-primary/10 px-3 py-1 text-[11px] uppercase tracking-[0.14em] sm:tracking-[0.22em] text-primary">
                             {project.label}
                           </Badge>
-                          <Badge variant="outline" className="rounded-full px-3 py-1 text-xs uppercase tracking-[0.22em] text-muted-foreground">
+                          <Badge variant="outline" className="max-w-full whitespace-normal wrap-break-word rounded-full px-3 py-1 text-[11px] uppercase tracking-[0.12em] sm:tracking-[0.22em] text-muted-foreground">
                             {project.role}
                           </Badge>
                         </div>
-                        <CardTitle className="text-3xl text-foreground">{project.title}</CardTitle>
-                        <CardDescription className="mt-3 text-base leading-7 text-muted-foreground">
+                        <CardTitle className="text-2xl leading-tight text-foreground sm:text-3xl">{project.title}</CardTitle>
+                        <CardDescription className="mt-3 text-sm leading-6 text-muted-foreground sm:text-base sm:leading-7">
                           {project.description}
                         </CardDescription>
                       </div>
-                      <Button asChild size="lg" className="shrink-0 rounded-full px-5 shadow-lg shadow-black/10">
+                      <Button asChild size="lg" className="w-full rounded-full px-5 shadow-lg shadow-black/10 sm:w-fit lg:shrink-0">
                         <a href={project.url} target="_blank" rel="noopener noreferrer">
                           View project <ExternalLink className="ml-2 h-4 w-4" />
                         </a>
@@ -93,7 +93,7 @@ export function PortfolioSection() {
                   <CardContent className="p-6 sm:p-8">
                     <div className="flex flex-wrap gap-2">
                       {project.tags.map((tag) => (
-                        <Badge key={tag} variant="secondary" className="rounded-full px-3 py-1.5 text-xs uppercase tracking-[0.18em]">
+                        <Badge key={tag} variant="secondary" className="rounded-full px-3 py-1.5 text-[11px] uppercase tracking-[0.12em] sm:text-xs sm:tracking-[0.18em]">
                           {tag}
                         </Badge>
                       ))}
